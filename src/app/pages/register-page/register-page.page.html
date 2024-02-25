@@ -1,0 +1,7 @@
+<ion-item [ngClass]="{'invalid-field': !nombres.valid && nombres.touched}">
+  <ion-label position="floating">Nombres</ion-label>
+  <ion-input formControlName="nombres" type="text"></ion-input>
+</ion-item>
+<!-- Repite para los demás campos -->
+
+<button type="submit" [disabled]="!registerForm.valid">Registrar</button>
